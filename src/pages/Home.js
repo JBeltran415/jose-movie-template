@@ -21,6 +21,10 @@ function Home() {
       useEffect(() => {
         getMovieApi(movieList);
       }, []);
+
+      return(
+        <div></div>
+      )
 }
 
 export default Home;

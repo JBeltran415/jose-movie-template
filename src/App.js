@@ -2,6 +2,8 @@ import Profile from "./pages/Profile.js";
 import Header from "./components/Header.js";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home.js";
+import React from "react";
+
 
 function App() {
   return (
