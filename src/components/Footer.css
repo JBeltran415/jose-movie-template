@@ -1,0 +1,94 @@
+.footer-line {
+  position: relative;
+  width: 1170px;
+  height: 1px;
+  bottom: 30px;
+
+  background: #dfcb92;
+  mix-blend-mode: normal;
+  opacity: 1;
+}
+.menu {
+  position: relative;
+  height: 32px;
+  width: 43px;
+  left: 530px;
+
+  font-family: "Sulphur Point";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 32px;
+
+  text-transform: uppercase;
+
+  color: #dfcb92;
+}
+.profile-tag {
+  position: relative;
+  width: 50px;
+  height: 32px;
+  left: 530px;
+  bottom: 50px;
+
+  font-family: "Public Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+
+  color: #80afed;
+}
+
+.email {
+  position: relative;
+  width: 152px;
+  height: 32px;
+  bottom: 50px;
+
+  font-family: "Public Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+
+  color: #80afed;
+}
+
+.phone-num {
+  position: relative;
+  width: 167px;
+  height: 32px;
+
+  font-family: "Public Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+
+  color: #80afed;
+}
+
+.footer-logo {
+  font-family: "Sulphur Point";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  position: relative;
+  top: 70px;
+
+  color: #d4cb92;
+}
+
+.footer-wrapper {
+  background-color: #395c6b;
+  height: 368px;
+  width: 1440px;
+  padding-left: 130px;
+}
+
+.social-icons {
+  position: relative;
+  top: 10px;
+}

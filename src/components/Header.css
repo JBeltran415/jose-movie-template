@@ -1,4 +1,49 @@
-.header-wrapper{
-    height: 100px;
-    background-color: aqua;
+.nav-bar {
+  background-color: #395c6b;
+  height: 368px;
+  width: 1440px;
+}
+
+.logo {
+  position: absolute;
+  width: 101px;
+  height: 48px;
+  left: 135px;
+  top: 16px;
+  font-family: "Sulphur Point";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  color: #dfcb92;
+}
+
+.profile-button {
+  position: absolute;
+  height: 42px;
+  width: 149px;
+  left: 1176px;
+  top: 31px;
+  color: #d4cb92;
+  border: 2px solid #d4cb92;
+  border-radius: 300px;
+  background-color: #395c6b;
+  
+  
+
+}
+
+.your-movies {
+  font-family: Sulphur Point;
+  font-size: 72px;
+  font-weight: 700;
+  line-height: 80px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: #d4cb92;
+  position: absolute;
+
+left: 526px;
+top: 150px;
+
 }

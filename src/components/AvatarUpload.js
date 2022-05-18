@@ -84,14 +84,15 @@ const AvatarUpload = () => {
       />
       <label htmlFor="avatar-image-upload">
         <Button
+      
           variant="contained"
-          color="primary"
+          color="#d4cb92"
           component="span"
           mb={2}
           onClick={handleClick}
         >
           {image ? <DeleteIcon mr={2} /> : <UploadIcon mr={2} />}
-          {image ? "Limpar" : "Upload"}
+          {image ? "Delete" : "Upload"}
         </Button>
       </label>
       <Typography variant="caption" display="block" gutterBottom>

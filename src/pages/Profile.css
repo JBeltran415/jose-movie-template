@@ -1,0 +1,87 @@
+.profile {
+  background-color: #d4cb92;
+}
+
+/* .MuiAvatar-colorDefault {
+    left: 600px;
+
+    position: relative;
+} */
+
+.sc-hKMtZM.bkSyjT {
+    text-align: left;
+    position: relative;
+    left: 270px;
+    
+}
+
+.form-container {
+  display: flex;
+
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+.form {
+  flex: 1;
+  border: 1px solid #a4a4a4;
+  border-radius: 15px;
+  justify-content: space-between;
+  background-color: white;
+  height: 489px;
+  width: 402px;
+  left: 2px;
+  top: 0px;
+  border-radius: 15px;
+  margin-right: 15%;
+  padding-left: 3%;
+  padding-right: 3%;
+}
+.form2 {
+  height: 532px;
+  width: 402px;
+  left: 2px;
+  top: -0.22412109375px;
+
+  background-color: white;
+
+  border: 1px solid #a4a4a4;
+  border-radius: 15px;
+  padding-left: 3%;
+  padding-right: 3%;
+}
+
+h3 {
+  font-family: Sulphur Point;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.create-profile {
+  margin-left: 15%;
+  font-family: Sulphur Point;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 29px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+p {
+  font-family: Sulphur Point;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+button {
+  color: white;
+  border: none;
+  border-radius: 300px;
+  background-color: #395c6b;
+  height: 42px;
+  width: 147px;
+}
