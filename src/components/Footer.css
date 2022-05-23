@@ -1,6 +1,6 @@
 .footer-line {
   position: relative;
-  width: 1170px;
+  /* width: 1170px; */
   height: 1px;
   bottom: 30px;
 
@@ -84,7 +84,7 @@
 .footer-wrapper {
   background-color: #395c6b;
   height: 368px;
-  width: 1440px;
+  /* width: 100vw; */
   padding-left: 130px;
 }
 

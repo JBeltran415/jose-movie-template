@@ -7,29 +7,53 @@ import MenuItem from "@mui/material/MenuItem";
 import InputLabel from "@mui/material/InputLabel";
 import Select from "@mui/material/Select";
 import "./Profile.css";
+import Typography from "@mui/material/Typography";
+
+import Card from "@mui/material/Card";
+import { CardActionArea } from "@mui/material";
+import CardContent from "@mui/material/CardContent";
+
+
 
 function Profile() {
-  const [progress, setProgress] = useState("getUpload");
-  const [url, setImageURL] = useState(undefined);
-  const [errorMessage, setErrorMessage] = useState("");
-  const [allTitles, setAllTitles] = useState([])
+  const [newTitle, setNewTitle] = useState("");
+  
+  const [allTitles, setAllTitles] = useState([]);
   const [formInput, setFormInput] = useState({
     name: "",
     country: "",
     state: "",
     about: "",
     watching: "",
-    movies:"",
     addMovie: "",
+    movies: [
+      "Avengers",
+      "Avengers Age of Ultron",
+      "Captain America Civil War",
+      "Avengers Infinity War",
+      "Avengers Endgame",
+      "Loki",
+      "Spider-man No Way Home",
+    ],
   });
 
-  
+  const addMovie = (e) => {
+    e.preventDefault();
+    // if (!newTitle) return;
+    let movieArrayCopy = [...formInput.movies];
+   
+    movieArrayCopy.push(newTitle);
+    console.log(movieArrayCopy, "movieArrayCopy")
+    setFormInput({ ...formInput, movies: movieArrayCopy });
+    
 
+  };
   const handleSubmit = (event) => {
     event.preventDefault();
-    const value = event.target.value
-    setFormInput({...formInput,[event.target.name]:value})
-    formInput.movies=  allTitles
+    const value = event.target.value;
+    setFormInput({ ...formInput, [event.target.name]: value });
+    formInput.movies = allTitles;
+    // formInput.movies.push(formInput);
     setFormInput({
       name: "",
       country: "",
@@ -37,16 +61,38 @@ function Profile() {
       about: "",
       watching: "",
       addMovie: "",
+      movies: [
+        "Avengers",
+        "Avengers Age of Ultron",
+        "Captain America Civil War",
+        "Avengers Infinity War",
+        "Avengers Endgame",
+        "Loki",
+        "Spider-man No Way Home",
+      ],
     });
-    console.log(formInput, "formInput")
+    console.log(formInput, "formInput");
   };
 
   const handleChange = (event) => {
     const value = event.target.value;
     setFormInput({ ...formInput, [event.target.name]: value });
+    setNewTitle(value)
 
     console.log("value", value);
   };
+
+  
+
+  const handleRemoveItem = (item, key) => {
+      let allTitles = [...formInput.movies];
+      allTitles.splice(key, 1);
+      setFormInput({...formInput, movies: allTitles})
+
+   
+  };
+ 
+  
 
   return (
     <div className="profile">
@@ -141,11 +187,37 @@ function Profile() {
                     onChange={(e) => handleChange(e)}
                   />
                 </FormControl>
-                <button className="add-movie" variant="contained">
+                <button
+                  className="add-movie"
+                  variant="contained"
+                  onClick={addMovie}
+                >
                   Add another
                 </button>
                 <FormControl margin="normal" fullWidth>
                   <p>Your Movies</p>
+                  <div className="movies-wrapper">
+                    {formInput.movies.map((movie, key,) => (
+                       
+                      <Card
+                        sx={{ maxWidth: 150 }}
+                        key={key}
+                        
+                        className="movies"
+                        onClick={(item) => handleRemoveItem(item,key)}
+                      >
+                        <CardActionArea>
+                          <CardContent>
+                            <Typography variant="body2" color="text.secondary">
+                              {movie}
+                            </Typography>
+                          </CardContent>
+                        </CardActionArea>
+                      </Card>
+                     
+                        
+                    ))}
+                  </div>
                 </FormControl>
 
                 <div>

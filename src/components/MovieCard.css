@@ -1,0 +1,24 @@
+.movies-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 70px;
+    padding-top: 200px;
+}
+
+.movie-poster {
+    background-color: tomato;
+    
+
+    
+
+    
+    
+}
+.card {
+    margin: 25px;
+    width: 370px;
+    height: 730px;
+    text-align: center;
+    background-color: #E6E1C5;
+
+}
