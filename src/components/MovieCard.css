@@ -3,11 +3,14 @@
     flex-wrap: wrap;
     margin-left: 70px;
     padding-top: 200px;
+    padding-bottom: 100px;
 }
 
 .movie-poster {
     background-color: tomato;
-    
+    width: 370px;
+    height: 550px;
+    border-radius: 20px;
 
     
 

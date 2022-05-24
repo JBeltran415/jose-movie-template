@@ -4,21 +4,13 @@ import Box from "@mui/material/Box";
 import TextField from "@mui/material/TextField";
 import FormControl from "@mui/material/FormControl";
 import MenuItem from "@mui/material/MenuItem";
-import InputLabel from "@mui/material/InputLabel";
 import Select from "@mui/material/Select";
 import "./Profile.css";
-import Typography from "@mui/material/Typography";
-
-import Card from "@mui/material/Card";
-import { CardActionArea } from "@mui/material";
-import CardContent from "@mui/material/CardContent";
-
 
 
 function Profile() {
   const [newTitle, setNewTitle] = useState("");
   
-  const [allTitles, setAllTitles] = useState([]);
   const [formInput, setFormInput] = useState({
     name: "",
     country: "",
@@ -52,8 +44,6 @@ function Profile() {
     event.preventDefault();
     const value = event.target.value;
     setFormInput({ ...formInput, [event.target.name]: value });
-    formInput.movies = allTitles;
-    // formInput.movies.push(formInput);
     setFormInput({
       name: "",
       country: "",
@@ -119,13 +109,13 @@ function Profile() {
                 </FormControl>
                 <FormControl fullWidth>
                   <p>Country</p>
-                  <InputLabel id="demo-simple-select-label">
+                  {/* <InputLabel id="demo-simple-select-label">
                     Choose your country
-                  </InputLabel>
+                  </InputLabel> */}
                   <Select
                     labelId="demo-simple-select-label"
                     id="demo-simple-select"
-                    label="Country"
+                    // label="Country"
                     name="country"
                     value={formInput.country}
                     onChange={(e) => handleChange(e)}
@@ -196,24 +186,22 @@ function Profile() {
                 </button>
                 <FormControl margin="normal" fullWidth>
                   <p>Your Movies</p>
-                  <div className="movies-wrapper">
+                  <div className="movies-wrapper-form">
                     {formInput.movies.map((movie, key,) => (
                        
-                      <Card
+                      <div
                         sx={{ maxWidth: 150 }}
                         key={key}
                         
                         className="movies"
                         onClick={(item) => handleRemoveItem(item,key)}
                       >
-                        <CardActionArea>
-                          <CardContent>
-                            <Typography variant="body2" color="text.secondary">
+                        
+                            <p variant="body2" color="text.secondary">
                               {movie}
-                            </Typography>
-                          </CardContent>
-                        </CardActionArea>
-                      </Card>
+                            </p>
+                         
+                      </div>
                      
                         
                     ))}

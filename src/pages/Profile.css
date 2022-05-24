@@ -1,30 +1,34 @@
 .profile {
-  background-color: #d4cb92;
+  background-color: #E6E1C5;
+  padding-top: 1%;
+  padding-bottom: 30%;
 }
 
-/* .MuiAvatar-colorDefault {
-    left: 600px;
 
-    position: relative;
-} */
 
 .sc-hKMtZM.bkSyjT {
     text-align: left;
     position: relative;
-    /* left: 270px; */
+    left: 270px;
+    padding-top: 2%;
+    padding-bottom: 2%;
     
 }
-
-.movies-wrapper {
+ 
+.movies-wrapper-form {
   display: flex;
   flex-wrap: wrap;
 }
 
 .movies {
-  margin: 5px;
-  width: 80px;
-  border: 4px, solid, rgb(0, 0, 0) !important;
-  
+  margin: 10px;
+  text-align: center;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 10px;
+}
+
+.movies p {
+  padding: 10px;
 }
 
 .form-container {
@@ -40,7 +44,7 @@
   border-radius: 15px;
   justify-content: space-between;
   background-color: white;
-  height: 489px;
+  height: 550px;
   width: 402px;
   left: 2px;
   top: 0px;
@@ -50,7 +54,7 @@
   padding-right: 3%;
 }
 .form2 {
-  height: 532px;
+  /* height: 630px; */
   width: 402px;
   left: 2px;
   top: -0.22412109375px;
@@ -79,6 +83,8 @@ h3 {
   line-height: 29px;
   letter-spacing: 0em;
   text-align: left;
+  padding-top: 3%;
+  padding-left: 3%;
 }
 p {
   font-family: Sulphur Point;
@@ -89,11 +95,26 @@ p {
   text-align: left;
 }
 
-button {
+.add-movie {
+  color: #395C6B;
+  
+  
+  height: 42px;
+  width: 147px;
+  background: #FFFFFF;
+border: 2px solid #395C6B;
+border-radius: 300px;
+margin-top: 3%;
+
+}
+.save-button {
   color: white;
   border: none;
   border-radius: 300px;
   background-color: #395c6b;
   height: 42px;
   width: 147px;
+  margin-top: 5%;
+  margin-bottom: 10%;
+  margin-left: 30%;
 }

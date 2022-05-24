@@ -4,14 +4,21 @@ function Header() {
   return (
     <nav className='nav-bar'>
       <div className="header-wrapper">
+        <Link to="/" className="logo-link">
         <div className="logo">
             LOGO
         </div>
+        </Link>
+        
+        <Link to="/profile">
         <button className="profile-button">
-            <Link to="/profile">Profile</Link>
+            Profile
         </button>
-        <p className="your-movies">Your Movies</p>
+        </Link>
+        
+        
       </div>
+      <p className="movies-title">Your Movies</p>
     </nav>
   );
 }
